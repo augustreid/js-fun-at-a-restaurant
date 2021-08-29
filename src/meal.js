@@ -12,8 +12,17 @@ function createMenuItem(newItemName, itemPrice, itemType) {
 };
 
 function addIngredients(newIngredient, ingredients) {
-  if (ingredients.indexOf(newIngredient) === -1) {ingredients.push(newIngredient);
-};
+  if (ingredients.includes(newIngredient) === false) {
+    ingredients.push(newIngredient);
+  };
+  // for (var i = 0; i < ingredients.length; i++) {
+  //   if (ingredients[i] != newIngredient) {
+  //     ingredients.push(newIngredient);
+  //   };
+  // };
+
+//   if (ingredients.indexOf(newIngredient) === -1) {ingredients.push(newIngredient);
+// };
   return ingredients;
 };
 
